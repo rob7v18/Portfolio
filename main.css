@@ -57,7 +57,7 @@
   }
 
   .home h2 {
-    margin-top: -50px;
+    margin-top: -150px;
   }
 
   h1 {
@@ -67,12 +67,18 @@
   }
 
   h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    padding: 0 0 35px 0;
+  }
+
+  h3 {
     font-family: 'Cardo', serif;
     font-size: 1rem;
     padding-bottom: 15px;
   }
 
-  h3 {
+  h4 {
     font-family: 'Cardo', serif;
     font-style: italic;
     font-size: .75rem;
@@ -119,7 +125,7 @@
     background-color:  rgb(26, 42, 54);
   }
 
-  footer h1 {
+  footer h2 {
     padding: 3%;
   }
 
@@ -181,7 +187,7 @@
       max-width: 250px;
     }
 
-    .home h2 {
+    .home h3 {
       margin: 0 0 0 100px;
       position: absolute;
       top: 61%;
@@ -199,6 +205,10 @@
       padding: 5% 10%;
     }
 
+    .project-pic {
+      max-width: 50%;
+    }
+
     .description {
       font-size: .85rem;
     }
@@ -207,7 +217,7 @@
       margin-left: 200px;
     }
 
-    footer h1 {
+    footer h2 {
       padding: 20px;
     }
 
