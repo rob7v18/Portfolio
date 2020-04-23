@@ -1,91 +1,218 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-    color: #444;
+    color: rgb(42, 66, 85);
     text-align: center;
     line-height: 1.5;
   }
   
-  nav, footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
   nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(42, 66, 85);
     position: fixed;
-    height: 75px;
+    height: 50px;
     top: 0;
     left: 0;
     right: 0;
   }
 
   .title {
-    position: relative;
-    float: left;
-    padding-left: 15px;
-    display: none;
+    position: absolute;
+    color: #C9E1C1;
+    font-size: 1.40rem;
+    top: 0;
+    left: 0;
+    padding: 10px 0 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #C9E1C1;
   }
 
   .navs li {
     display: inline-block;  
-    position: relative;
     text-decoration: none;
-    float: right;
-    padding: 0 10px 0 10px;
-    font-size: 1rem;
+    padding: 10px 10px 0 5px;
+    color: rgb(201, 225, 193);
   }
   
   main {
-      margin-top: 100px;
+      padding: 0;
+      margin: 0;
   }
 
-  header {
-    padding: 12% 0;
+  .home {
+    background-color:#C9E1C1;
+    padding: 30% 15% 15% 15%; 
+    line-height: 3rem;
+  }
+
+  .home h2 {
+    margin-top: -50px;
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    padding: 0 0 35px 0;
+  }
+
+  h2 {
+    font-family: 'Cardo', serif;
+    font-size: 1rem;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: .75rem;
+  }
+
+  p {
+    font-family: 'Cardo', serif;
+  }
+
+  .description {
+    font-style: normal;
+    padding: 0 0 35px 0;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+    width: 35%
   }
   
   section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
+    min-height: 250px;
+    padding: 15%;
   }
   
-  section:nth-child(even) {
-    background-color: #ddd;
+  .about {
+    background-color: #0fb493;
   }
-  
+
+  .projects {
+    background-color: #0f9fb4;
+  }
+
+  .project-pic {
+    max-width: 70%;
+    border-radius: 3%;
+  }
+
+  .contact {
+    color: #C9E1C1;
+  }
+
+  footer {
+    height: 175px;
+    background-color:  rgb(26, 42, 54);
+  }
+
+  footer h1 {
+    padding: 3%;
+  }
+
+  .icons {
+    display: inline-block;
+    max-width: 17%;
+    padding: 1% 5%;
+  }
+
   @media only screen and (min-width: 750px) {
     nav {
-      background-color: rgb(138, 136, 136);
       width: 200px;
       height: 100%;
-      display: block;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 1;
+      left: 0;
+      overflow-x: hidden;
     }
   
     .title {
-      display: contents;
-      position: absolute;
+      position: relative;
+      padding: 30px 0 0 0;
+      font-size: 2.5rem;
     }
-  
-    .navs li {
-      display: block;
-      text-decoration: none;
-      padding: 20px;
+
+    ul {
+      max-width: 100px;
+      text-align: left;
+      margin-top: 100px;
+      margin-left: 45px;
     }
-  
+
+    a {
+      font-size: 1.65rem;
+    }
+
     main {
-        margin-left: 200px;
+      margin-left: 200px;
+    }
+
+    .profile-pic {
+      margin: 0 0 0 100px;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 250px;
+    }
+
+    .home h1 {
+      margin: 10px 0 0 100px;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 250px;
+    }
+
+    .home h2 {
+      margin: 0 0 0 100px;
+      position: absolute;
+      top: 61%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 250px;
+    }
+
+    .home {
+      height: 950px;
     }
   
-    header {
-      padding: 20% 0;
+    section {
+      padding: 5% 10%;
     }
-    
+
+    .description {
+      font-size: .85rem;
+    }
+
     footer {
       margin-left: 200px;
+    }
+
+    footer h1 {
+      padding: 20px;
+    }
+
+    .icons {
+      max-width: 125px;
+      padding: 0 40px 0 40px;
     }
   }
