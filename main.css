@@ -168,8 +168,12 @@
       height: 950px;
     }
     
-    section {
+    .about {
       height: 950px;
+    }
+
+    .projects{
+      max-height: fit-content;
     }
 
     .profile-pic {
