@@ -30,6 +30,7 @@
     top: 0;
     left: 0;
     padding: 10px 0 0 10px;
+    display: none; 
   }
 
   a {
@@ -53,17 +54,12 @@
   .home {
     background-color:#C9E1C1;
     padding: 30% 15% 15% 15%; 
-    line-height: 3rem;
-  }
-
-  .home h2 {
-    margin-top: -150px;
+    height: 550px;
   }
 
   h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
-    padding: 0 0 35px 0;
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -99,7 +95,7 @@
   }
   
   section {
-    min-height: 250px;
+    min-height: 600px;
     padding: 15%;
   }
   
@@ -135,7 +131,7 @@
     padding: 1% 5%;
   }
 
-  @media only screen and (min-width: 750px) {
+  @media screen and (min-width: 750px) {
     nav {
       width: 200px;
       height: 100%;
@@ -150,6 +146,7 @@
       position: relative;
       padding: 30px 0 0 0;
       font-size: 2.5rem;
+      display: unset;
     }
 
     ul {
@@ -165,6 +162,14 @@
 
     main {
       margin-left: 200px;
+    }
+
+    .home {
+      height: 950px;
+    }
+    
+    section {
+      height: 950px;
     }
 
     .profile-pic {
@@ -187,18 +192,14 @@
       max-width: 250px;
     }
 
-    .home h3 {
+    .hero {
       margin: 0 0 0 100px;
       position: absolute;
-      top: 61%;
+      top: 63%;
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       max-width: 250px;
-    }
-
-    .home {
-      height: 950px;
     }
   
     section {
