@@ -39,6 +39,10 @@
     color: #C9E1C1;
   }
 
+  .projects-links {
+    display: block;
+  }
+
   .navs li {
     display: inline-block;  
     text-decoration: none;
