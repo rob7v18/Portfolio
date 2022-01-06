@@ -9,39 +9,100 @@
         content="web developer, front-end, design, development, build, create, full stack, back end, business, application, framework, projects, bio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Josefin+Sans:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav role="navigation">
-        <h1 class="title">Robert's Portfolio</h1>
-        <ul class="navs">
+    <nav>
+        <ul class="navs" id="navs">
             <li><a href="#home" class="nav-links">Home</a></li>
             <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#skills" class="nav-links">Skills</a></li>
             <li><a href="#projects" class="nav-links">Projects</a></li>
             <li><a href="#contact" class="nav-links">Contact</a></li>
         </ul>
+        <a href="javascript:void(0);" class="menu" ><img src="Compressed_Files/hamburger.png" alt="image of hamburger menu" class="menu-icon">
+        </a>
     </nav>
 
-    <main role="main">
-        <header role="banner" class="hero home" id="home">
-            <h1>Hero</h1>
+    <main>
+        <header class="home" id="home">
+            <img src="Compressed_Files/profilePic.png" alt="Robert's profile picture" class="profile-pic">
+            <p>HI THERE! I'M</p>            
+            <h2><span class="firstName">ROBERT</span> VANG</h2>
+            <p class="hero">A Front-End Web Developer enthusiast passionate about creating interactive application and experiences on the web.</p>
         </header>
 
         <section class="about" id="about">
-            About
+            <h2>ABOUT</h2>         
+            <p>I’m a front-end web developer with skills in HTML, CSS, JAVASCRIPT, JQUERY, SQL, REST API, RESPONSIVE DESIGN, GIT, and VS CODE. My education in Information Systems and my various work experiences has given me a strong foundation for solving complex problem and creative work. I am passionate about solving problems through code, and I am excited to work with other developers and learn more about front-end web development.</p>
         </section>
-
+        <section class="skills" id="skills">
+            <h2>SKILLS</h2>
+                <div class="skills-icons">
+                    <img src="Compressed_Files/html.png" class="sk-icons">
+                    <img src="Compressed_Files/css.png" class="sk-icons">
+                    <img src="Compressed_Files/js.png" class="sk-icons">
+                    <img src="Compressed_Files/jquery.png" class="sk-icons">
+                    <img src="Compressed_Files/api.png" class="sk-icons">
+                    <img src="Compressed_Files/vscode.png" class="sk-icons">
+                    <img src="Compressed_Files/git.png" class="sk-icons">
+                    <img src="Compressed_Files/responsivedesign.png" class="sk-icons">
+                    <img src="Compressed_Files/accessibility.png" class="sk-icons">
+                </div>
+        </section>
         <section class="projects" id="projects">
-            Projects
-        </section>
+            <h2 class="project-title">PROJECTS</h2>
+                <div class="project-sections">
+                    <div class="project-description" id="project1">
+                        <img src="Compressed_Files/bass1.jpg" alt="image of quiz app project" class="project-pic" id="project1-pic"></a>
+                        
+                        <a href="https://rob7v18.github.io/QuizApp/" target="_blank">
+                            <h2 class="proj-title">LARGEMOUTH BASS QUIZ</h2>
+                        </a>
 
-        <section class="contact" id="contact">
-            Contact
-        </section>
+                        <div class="project-desc">
 
+                            <h4 class="description">Technologies used: HTML, CSS, JAVASCRIPT & JQUERY</h4>
+                            <h4 class="description">Description: Multiple choice Quiz App about Largemouth Bass. </h4>
+                            <div>
+                                <a href="https://rob7v18.github.io/QuizApp/" class="projects-links" target="_blank">LIVE SITE</a>
+                                <a href="https://github.com/rob7v18/QuizApp.git" class="projects-links" target="_blank">REPOSITORY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-description" id="project2">
+                        <img src="Compressed_Files/stock2.jpg" alt="image of quiz app project" class="project-pic" id="project1-pic"></a>
+
+                        <a href="https://rob7v18.github.io/QuizApp/" target="_blank">
+                            <h2 class="proj-title">STOCK TRACKER</h2>
+                        </a>
+
+                        <div class="project-desc">
+
+                            <h4 class="description">Technologies used: HTML, CSS, JAVASCRIPT, JQUERY & REST API</h4>
+                            <h4 class="description">Description: Stock Tracker App provides useful information about a stock.</h4>
+                            <div>
+                                <a href="https://rob7v18.github.io/QuizApp/" class="projects-links" target="_blank">LIVE SITE</a>
+                                <a href="https://github.com/rob7v18/QuizApp.git" class="projects-links" target="_blank">REPOSITORY</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
-    <footer role="content-info">Footer</footer>
 
+    <footer class="contact" id="contact">
+        <h2>LET'S CONNECT</h2>
+        <a href="mailto:rob7v18@gmail.com" target="_blank"><img src="Compressed_Files/email.png" alt="email icon"
+                class="icons"></a>
+        <a href="https://github.com/rob7v18" target="_blank"><img src="Compressed_Files/github.png" alt="Github icon"
+                class="icons"></a>
+        <a href="https://linkedin.com/in/robert-vang-231675b1" target="_blank"><img src="Compressed_Files/linkedin.png"
+                alt="LinkedIn icon" class="icons"></a>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 

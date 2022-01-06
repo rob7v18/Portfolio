@@ -1,91 +1,255 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    color: #444;
+    background-color: rgb(231, 238, 237);
+    color: rgb(196, 215, 219);
     text-align: center;
     line-height: 1.5;
   }
   
-  nav, footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
   nav {
+    background-color: #072238;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     position: fixed;
-    height: 75px;
+    height: 50px;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
   }
 
-  .title {
-    position: relative;
-    float: left;
-    padding-left: 15px;
+  a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #98ecf7;
+  }
+
+  a:hover {
+    color: rgb(179, 34, 9);
+  }
+
+  .icons:hover {
+    opacity: .70;
+  }
+
+  .profile-pic {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    margin: 20px 0 50px 0;
+    border-style: ridge;
+  }
+
+  .navs {
     display: none;
+    background-color: #072238;
+    position: absolute;
+    padding-top: 40px;
+    height: 375px;
+    width: 200px;
+    top: 50px;
+    right: 0;
   }
 
   .navs li {
-    display: inline-block;  
-    position: relative;
+    display: block;
     text-decoration: none;
-    float: right;
-    padding: 0 10px 0 10px;
-    font-size: 1rem;
-  }
-  
-  main {
-      margin-top: 100px;
+    padding: 15px 16px;
+    color: rgb(201, 225, 193);
   }
 
-  header {
-    padding: 12% 0;
+  .menu {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    height: 50px;
+    width:50px;
+    right: 0;
+    top: 0;
+  }
+
+  .menu-icon {
+    padding: 10px;
   }
   
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #154368;
+    padding: 130px 0 80px 0;
+  }
+  
+  h2 {
+    padding: 35px;
+  }
+
+  .firstName {
+    color: rgb(159, 222, 252);
+  }
+
+  .about, .skills, .projects {
+    color: rgb(17, 4, 88);
+  }
+
+  .skills-icons {
+    display: block;
+    background-color: rgb(242, 249, 253);
+    margin: 0 auto;
+    padding: 35px 35px;
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .sk-icons {
+    border: .1px solid rgb(218, 213, 213);
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(245, 243, 243);
+    border-radius: 15px;
+    padding: 0px;
+    margin: 5px 10px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .projects {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: -80px;
+  }
+
+  .project-title {
+    padding-bottom: 50px;
+  }
+
+  .proj-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 0 10%;
+  }
+
+  .project-description {
+    position: relative;
+    width: 100%;
+    margin-bottom: -8px;
+  }
+
+  .project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: black;
+    color: white;
+    transition: all .7s ease;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 0 5%;
+  }
+
+  .project-pic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+  }
+
+  .project-description:hover .project-desc {
+    opacity: .8;
+  }
+
+  .project-description:hover .proj-title {
+    opacity: 0;
+  }
+  
+  .description {
+    padding: 0 0 35px 0;
+  }
+  
+  .projects-links {
+    display: inline-block;
+    padding: 0 30px;
+
+  }
+  
+  .home {
+    padding: 120px 80px 80px 80px;
+  }
+
   section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
+    padding: 80px 80px 80px 80px;
   }
   
-  section:nth-child(even) {
-    background-color: #ddd;
+  footer {
+    height: 300px;
+    background-color: #154368;
   }
-  
-  @media only screen and (min-width: 750px) {
+
+  footer h2 {
+    padding: 80px 0 20px 0;
+    color:rgb(201, 225, 193)
+  }
+
+  .icons {
+    display: inline-block;
+    height: 90px;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: 750px) {
     nav {
-      background-color: rgb(138, 136, 136);
-      width: 200px;
-      height: 100%;
-      display: block;
+      height: 90px;
     }
-  
-    .title {
-      display: contents;
-      position: absolute;
+
+    .navs {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height:100%;
+      width: 100%;
+      padding-top: 0;
+      top: 0;
     }
-  
+
     .navs li {
-      display: block;
+      display: inline;  
       text-decoration: none;
-      padding: 20px;
+      color: rgb(201, 225, 193);
     }
+
+    a {
+      font-size: 1.65rem;
+     }
   
-    main {
-        margin-left: 200px;
+    .menu, .menu-icon {
+      display: none;
     }
-  
-    header {
-      padding: 20% 0;
+
+    .project-sections {
+      display: flex;
     }
-    
-    footer {
-      margin-left: 250px;
+
+    .sk-icons {
+      margin: 20px 30px;
+      height: 100px;
+      width: 100px;
     }
   }
