@@ -193,7 +193,7 @@
     padding: 120px 80px 80px 80px;
   }
 
-  section {
+  section, .hero {
     padding: 80px 80px 80px 80px;
   }
   
@@ -243,12 +243,11 @@
       display: none;
     }
 
-    .project-sections {
+    .hero, .about, .skills, .projects {
       display: block;
       margin-left: auto;
       margin-right: auto;
       max-width: 900px;
-
     }
 
     img {
